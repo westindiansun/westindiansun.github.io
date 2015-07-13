@@ -1,0 +1,597 @@
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+
+body {
+	background: url(../images/whitegrid.jpg) repeat;
+	/* background-size: cover;*/
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	font-family: 'Roboto', Helvetica, Arial, sans-serif;
+	font-size: 16px;
+	-webkit-font-smoothing: antialiased;
+}
+
+hr {
+	width: 100%;
+	opacity: .2;
+	margin-top: 50px;
+}
+
+/* The main navigation */
+
+#mainnav {
+	margin-top: 15px;
+	margin-left: 20px;
+	width: 100%;
+
+}
+
+
+#mainnav h1 {
+	width: 40%;
+	float: left;
+
+}
+
+#mainnav ul {
+	float: left;
+	width: 55%;
+	margin-top: 15px;
+}
+
+#mainnav a {
+	text-decoration: none;
+}
+
+#mainnav a:hover {
+	color: #4aabcb;
+}
+
+a.navSelect {
+	color: #000;
+}
+
+#mainnav li {
+	display: inline;
+	padding-right: 25px;
+	font-family: 'The Girl Next Door', 'Roboto', Helvetica, Arial, sans-serif;
+	font-weight: 100;
+	font-size: 1.8em;
+}
+
+a.navSelect.active {
+	color: #4aabcb;
+	text-decoration: none;
+}
+
+/* The main hero image on the homepage */
+
+.hpHero {
+	margin-top: 50px;
+	width: 100%;
+	padding: 15%;
+	font-size: 1.2em;
+	background: url(../images/hphero1a.jpg) center center no-repeat;
+	background-size: cover;
+	overflow: hidden;
+}
+
+
+.hpHero p {
+	color: #fff;
+	font-size: 1.8em;
+	font-family: 'The Girl Next Door', 'Roboto', Helvetica, Arial, sans-serif;
+	font-weight: 100;
+	background: rgba(177,133,99,.6);
+	padding: 30px;
+	border-radius: 10px;
+	box-shadow: 0 0 50px rgba(0,0,0,.4);
+}
+
+
+
+
+/* controls container of sub hero and favorite individual product context under main hero*/
+#container {
+	/*width: 940px;*/
+	margin: auto;
+	margin-top: 15px;
+	width: 100%;
+}
+
+.subHeroA {
+	width: 65%;
+	height: 200px;
+	float: left;
+	background: url(../images/subhero_women.jpg) center center no-repeat;
+	background-size: cover;
+	overflow: hidden;
+	padding: 150px;
+	margin-bottom: 45px;
+}
+
+
+.subHeroB {
+	width: 34%;
+	height: 200px;
+	float: right;
+	background: url(../images/subhero_men.jpg) center center no-repeat;
+	background-size: cover;
+	overflow: hidden;
+	padding: 150px;
+	margin-bottom: 45px;
+}
+
+
+.subHeroA:hover, .subHeroB:hover {
+	opacity: 0.9;
+	-webkit-filter: grayscale(80%);
+	filter: grayscale(80%);
+}
+
+.subHeroA, .subHeroB {
+	opacity: 1;
+	-webkit-filter: grayscale(0%);
+	filter: grayscale(0%);
+    transition: opacity .25s ease-in-out;
+    -moz-transition: opacity .25s ease-in-out;
+    -webkit-transition: opacity .25s ease-in-out;
+}
+
+
+.shopProduct p {
+	font-family: 'The Girl Next Door', 'Roboto', Helvetica, Arial, sans-serif;
+	font-weight: 100;
+	font-size: 2em;
+}
+
+.shopProduct a {
+	text-decoration: none;
+	color: #fff;
+	font-family: 'The Girl Next Door', 'Roboto', Helvetica, Arial, sans-serif;
+	font-weight: 100;
+	font-size: 2.2em;
+}
+
+
+
+/* The sub nav of product on the homepage. These are just the headers for the site */
+
+
+.headerTitle {
+	margin-bottom: 25px;
+}
+
+.headerProductTitle {
+	font-family: 'The Girl Next Door', 'Roboto', Helvetica, Arial, sans-serif;
+	font-weight: 100;
+	font-size: 2em;
+	color: #4aabcb;
+}
+
+.productContainer {
+	width: 100%;
+	margin: auto;
+	overflow: hidden;
+	max-width: 960px;
+}
+
+#productList1, #productList2, #productList3, #productList4 {
+	width: 23.4%;
+	height: 280px;
+	border: 1px solid #eee;
+	background: #fff;
+	padding-bottom: 30px;
+	margin-bottom: 20px;
+	font-family: 'Roboto', Helvetica, Arial, sans-serif;
+	font-weight: 100;
+	font-size: 1em;
+	line-height: 110%;
+	text-transform: lowercase;
+}
+
+#productList1, #productList2, #productList3 {
+	float: left;
+	margin-right: 20px;
+}
+
+#productList4 {
+	float: right;
+}
+
+/* this controls how the product title and shop now hover anchor tag comes in with transitions*/
+#productList1:hover, #productList2:hover, #productList3:hover, #productList4:hover {
+	background: rgba(252,252,252,.9);
+    text-align: center;
+    opacity: .7;
+    -webkit-transition: opacity .25s ease;
+	-moz-transition: opacity .25s ease;
+}
+
+.productListLink {
+	margin-top: 55px;
+	padding: 0px 10px 5px 10px;
+	width: 100%;
+	color: #000;
+	-webkit-transition: -webkit-transform 0.35s, color 0.35s;
+	transition: transform 0.35s, color 0.35s;
+	-webkit-transform: translate3d(0,-50%,0);
+	transform: translate3d(0,-50%,0);
+}
+
+.productListLink:hover {
+	color: #666;
+	-webkit-transform: translate3d(0,-50%,0) translate3d(0,-40px,0);
+	transform: translate3d(0,-50%,0) translate3d(0,-40px,0);
+}
+
+.productListLink a {
+	text-decoration: none;
+	font-family: 'The Girl Next Door', 'Roboto', Helvetica, Arial, sans-serif;
+	font-weight: 300;
+	font-size: 1.2em;
+	color: #4aabcb;
+	width: 100%;
+	opacity: 0;
+	-webkit-transform: translate3d(0,10px,0);
+	transform: translate3d(0,10px,0);
+} 
+
+/* this controls how the Shop Now goes out and fade in from opacity of 1 - makes more smooth*/
+.productListLink a {
+	opacity: 0;
+	-webkit-transform: translate3d(0,50%,0);
+	transform: translate3d(0,50%,0);
+}
+
+#productList4:hover, #productList3:hover, 
+#productList2:hover, #productList1:hover,
+.productListLink::before, 
+#productList4 a, #productList3 a,
+#productList2 a, #productList1 a {
+	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+	transition: opacity 0.35s, transform 0.35s;
+}
+
+#productList4:hover, #productList3:hover, 
+#productList2:hover, #productList1:hover, 
+.productListLink::before, 
+#productList4 a:hover, #productList3 a:hover, 
+#productList2 a:hover, #productList1 a:hover {
+	opacity: 1;
+	-webkit-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0);
+}
+/* end of hover tranisitons for product title and shop now*/
+
+#footer {
+	background: #eee;
+	padding: 30px 100px 200px 100px;
+	margin-top: 70px;
+	font-weight: 100;
+	width: 100%;
+}
+
+#footer p {
+	font-family: 'Roboto', Helvetica, Arial, sans-serif;
+	font-weight: 100;
+	font-size: 1em;
+	border-bottom: solid #ccc 1px;
+	padding-bottom: 30px;
+	margin-bottom: 25px;
+}
+
+.footerList {
+	float: left;
+	text-align: left;
+}
+
+.footerList li {
+	line-height: 180%;
+	font-family: 'Roboto', Helvetica, Arial, sans-serif;
+	font-weight: 100;
+	font-size: .9em;
+}
+
+.footerList li a {
+	color: #000;
+	text-decoration: none;
+}
+
+.footerList li a:hover {
+	text-decoration: underline;
+	color: #4aabcb;
+}
+
+.footerSignUp {
+	float: right;
+}
+
+.footerSignUp label {
+	font-family: 'The Girl Next Door', 'Roboto', Helvetica, Arial, sans-serif;
+	font-weight: 300;
+	font-size: 1.4em;
+	color: #4aabcb;
+}
+
+#addEmail {
+	padding: 7px 35px;
+}
+
+#signUpBtn {
+	padding: 2px 25px;
+	background: #4aabcb;
+	color: #fff;
+	font-family: 'The Girl Next Door', 'Roboto', Helvetica, Arial, sans-serif;
+	font-weight: 100;
+	font-size: 1.2em;
+	border-radius: 4px;
+	text-decoration: none;
+	border: none;
+}
+
+.social a img {
+	float: right;
+	padding-top: 10px;
+}
+
+
+.womenPageHero {
+	margin-top: 50px;
+	margin-bottom: 30px;
+	width: 100%;
+	padding: 8%;
+	font-size: 1.2em;
+	background: url(../images/headerimg_women.jpg) center center no-repeat;
+	background-size: cover;
+	overflow: hidden;
+	-webkit-filter: grayscale(50%);
+	filter: grayscale(50%);
+}
+
+.womenPageHero p {
+	color: #fff;
+	font-size: 1.8em;
+	font-family: 'The Girl Next Door', 'Roboto', Helvetica, Arial, sans-serif;
+	font-weight: 100;
+	padding: 15px;
+}
+
+
+.menPageHero {
+	margin-top: 50px;
+	margin-bottom: 30px;
+	width: 100%;
+	padding: 8%;
+	font-size: 1.2em;
+	background: url(../images/headerimg_men.jpg) center center no-repeat;
+	background-size: cover;
+	overflow: hidden;
+	-webkit-filter: grayscale(50%);
+	filter: grayscale(50%);
+}
+
+.menPageHero p {
+	color: #fff;
+	font-size: 1.8em;
+	font-family: 'The Girl Next Door', 'Roboto', Helvetica, Arial, sans-serif;
+	font-weight: 100;
+	padding: 15px;
+}
+
+
+.inspirationPageHero {
+	margin-top: 50px;
+	margin-bottom: 30px;
+	width: 100%;
+	padding: 8%;
+	font-size: 1.2em;
+	background: url(../images/headerinspiration.jpg) center center no-repeat;
+	background-size: cover;
+	overflow: hidden;
+	-webkit-filter: grayscale(50%);
+	filter: grayscale(50%);
+}
+
+.inspirationPageHero p {
+	color: #fff;
+	font-size: 1.8em;
+	font-family: 'The Girl Next Door', 'Roboto', Helvetica, Arial, sans-serif;
+	font-weight: 100;
+	padding: 15px;
+}
+
+
+
+.productPageContainer, .contactPageContainer {
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 110px;
+	overflow: hidden;
+	max-width: 960px;
+}
+
+.productPageImg {
+	float: left;
+	width: 40%;
+	height: 300px;
+	border: 1px solid #eee;
+	background: #fff;
+	padding-bottom: 30px;
+	margin-bottom: 20px;
+	margin-left: 10px;
+}
+
+.contactPageImg {
+	float: left;
+	width: 40%;
+	overflow: hidden;
+	border: 1px solid #eee;
+	background: #fff;
+	margin-bottom: 20px;
+	margin-left: 10px;
+}
+
+.contactPageImg img {
+	-webkit-filter: grayscale(50%);
+	filter: grayscale(50%);
+}
+
+
+.productPageDescription, .contactPageDescription {
+	float: right;
+	width: 50%;
+}
+
+.productPageCopy, .contactCopy {
+	text-align: left;
+	font-family: 'Roboto', Helvetica, Arial, sans-serif;
+	font-weight: 100;
+	font-size: 1em;
+	line-height: 135%;
+}
+
+.productPageHeader, .contactPageHeader {
+	font-family: 'The Girl Next Door', 'Roboto', Helvetica, Arial, sans-serif;
+	font-weight: 100;
+	font-size: 1.6em;
+	color: #4aabcb;
+	text-align: left;
+}
+
+.contactPageDescription form {
+	font-family: 'Roboto', Helvetica, Arial, sans-serif;
+	font-weight: 300;
+	font-size: 1.1em;
+	color: #000;
+	text-align: left;
+}
+
+.contactPageDescription textarea {
+	width: 375px;
+	height: 200px;
+	margin-top: 10px;
+	overflow: hidden;
+}
+
+.formName, .formEmail, .formComment {
+	margin-top: 20px;
+}
+
+.formSubmit input {
+	font-family: 'The Girl Next Door', 'Roboto', Helvetica, Arial, sans-serif;
+	font-weight: 300;
+	font-size: 1.3em;
+	margin-top: 10px;
+	padding: 4px 25px 1px 25px;
+	color: #fff;
+	background: #4aabcb;
+	border-radius: 4px;
+	border: none;
+}
+
+.formSubmit input:hover {
+	background: #0b9bcb;
+}
+
+
+#orderBtn {
+	margin-top: 35px;
+	padding: 8px 25px;
+	background: #4aabcb;
+	color: #fff;
+	font-family: 'The Girl Next Door', 'Roboto', Helvetica, Arial, sans-serif;
+	font-weight: 100;
+	font-size: 1.2em;
+	text-decoration: none;
+	border-radius: 4px;
+	border: none;
+	float: left;
+}
+
+#orderBtn a {
+	color: #fff;
+	text-decoration: none;
+}
+
+
+#orderBtn:hover {
+	background: #0b9bcb;
+}
+
+.headerInspiration {
+	width: 100%;
+	clear: both;
+	background: #4aabcb;
+	margin-top: 50px;
+	padding: 20px;
+	color: #fff;
+	font-family: 'The Girl Next Door', 'Roboto', Helvetica, Arial, sans-serif;
+	font-weight: 100;
+	font-size: 2em;
+}
+
+
+
+.black_overlay{
+    display: none;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    z-index:1001;
+    -moz-opacity: 0.8;
+    opacity:.80;
+    filter: alpha(opacity=80);
+}
+
+.white_content {
+    display: none;
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    width: 80%;
+    height: 80%;
+    padding: 16px;
+    z-index:1002;
+    text-align: center;
+}
+
+.white_content img {
+    max-width: 100%;
+    max-height: 100%;
+    z-index: 1003;
+}
+
+.white_content a#cross{
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-color: #fff;
+    height: 20px;
+    width: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    color: inherit;
+    text-decoration: none;
+    z-index: 1004;
+}
+
+.white_content a#cross:visited, .white_content a#cross:hover{
+    text-decoration: none;
+    color: inherit;
+}
+
+
+
+
+
